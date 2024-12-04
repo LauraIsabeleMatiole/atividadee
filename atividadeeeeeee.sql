@@ -21,9 +21,10 @@ insert into disciplina(codigo_disciplina, nome_disciplina, carga_horaria, descri
 values 
 (1, 'mecatronica', 50, mecratronica);
 savepoint disciplinaadicionada;
-insert into professor (nro_registro_professor, especialidade, nome, dataadimissao) values
+insert into disciplina(codigo_disciplina, nome_disciplina, carga_horaria, descricao) values
  (2, 'tecnico de ti', 70, 'desenvolvimento de informatica'),
  (3, 'Elêtrica', 90, 'eletrica eletronica' ),
-  (4, 'Mecânica', 'Fernando da Silva', '2023-01-01'); 
+  (4, 'Mecânica', '70', 'mecanica'),
+   (5, 'gastronomia', '70', 'aprender cozinhar'); 
  COMMIT;
  rollback to savepoint disciplinaadicionada;
